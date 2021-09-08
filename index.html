@@ -12,8 +12,13 @@
 </head>
 <body>
   <header class="site-header">
-    <img src="logo.svg" alt="" class="logo">
     <nav class="main-nav">
+      <div class="hamburger" onclick="onClick()">
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+      </div>
+      <img src="logo.svg" alt="" class="logo">
       <ul>
         <li class="main-nav__item">Home</li>
         <li class="main-nav__item">About</li>
@@ -22,14 +27,16 @@
         <li class="main-nav__item btn">Sign Up</li>
       </ul>
     </nav>
-    <div>
-      <h1 class="site-header__header-text">Responsive layouts <span class=header-text--color>don't have to be a struggle</span></h1>
+    <div class="container">
+      <div>
+        <h1 class="site-header__header-text">Responsive layouts <span class=header-text--color>don't have to be a struggle</span></h1>
+      </div>
+      <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti provident dolor cupiditate ab placeat perspiciatis consectetur cum.</p>
+        <div class="btn">I want to learn</div>
+      </div>
     </div>
-    <div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti provident dolor cupiditate ab placeat perspiciatis consectetur cum.</p>
-      <div class="btn">I want to learn</div>
-    </div>
-  </header>
+  </header> 
 
   <section class="second">
     <div class="second-item">
@@ -105,5 +112,13 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    const menuButton = document.getElementsByClassName('main-nav');
+    
+    function onClick() {
+      menuButton[0].classList.toggle('main-nav--expanded');
+    }
+  </script>
 </body>
 </html>
