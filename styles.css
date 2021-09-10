@@ -10,6 +10,17 @@ img {
   max-width: 100%;
 }
 
+.btn {
+  display: inline-block;
+  font-family: "Oswald", sans-serif;
+  background-color: #A59678;
+  width: max-content;
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5em 1.5em;
+  border-radius: 20rem;
+}
+
 .container {
   padding: 2em;
 }
@@ -52,12 +63,30 @@ img {
   background-color: #fff;
 }
 
+.hamburger:hover {
+  cursor: pointer;
+}
+
 .main-nav__item {
   list-style: none;
   font-family: "Oswald", sans-serif;
   font-size: 1.125rem;
-  color: #fff;
   padding: 0.5em;
+}
+
+.main-nav__item a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.main-nav__item__btn {
+  margin-top: 0.5em;
+  padding: 0.25em 1.5em;
+}
+
+.main-nav__item__btn a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .site-header__header-text {
@@ -66,19 +95,107 @@ img {
   line-height: 1.2;
 }
 
+.site-header__paragraph {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  margin-top: 2em;
+}
+
+.site-header__button {
+  margin: 2em 0;
+  font-family: "Oswald", sans-serif;
+}
+
+
 .header-text--color {
   color: #A59678;
 }
 
 .second {
-  background-color: #6F737F;
+  background-color: #f1f1f1;
+}
+
+.second-item {
+  text-align: center;
+  margin-top: 2em;
+}
+
+.second-item__header {
+  color: #A59678;
+  font-family: "Oswald", sans-serif;
+}
+
+.second-item__text {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  margin-top: 1em;
+}
+
+.third__main-content__header {
+  font-family: "Oswald", sans-serif;
+  color: #A59678;
+  margin-bottom: 1em;
+}
+
+.third__main-content__text {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+}
+
+.third__main-content__img {
+  margin: 2em 0;
 }
 
 .third__extra__item {
   background-color: #2e323f;
   color: #fff;
+  margin-top: 1em;
+  padding: 2em 1em;
+  text-align: center;
+  line-height: 1.5;
 }
 
+.extra__item__header {
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 0.5em;
+}
+
+.extra__item__text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+}
 .site-footer {
   background-color: #2e323f;
+  color: #fff;
+}
+
+.site-footer__details {
+  font-family: "Montserrat", sans-serif;
+}
+
+.site-footer__details__heading{
+  color: #A59678;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 0.5em;
+}
+
+.site-footer__details__nav{
+  margin-top: 2em;
+}
+
+.site-footer__details-nav-block {
+  list-style: none;
+  margin-bottom: 2.5em;
+}
+
+.site-footer__site-nav-block__item a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: .75em;
+}
+
+.footer__heading {
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 1em;
 }
