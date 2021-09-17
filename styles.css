@@ -22,7 +22,9 @@ img {
 }
 
 .container {
+  max-width: 1200px;
   padding: 2em;
+  margin: 0 auto;
 }
 
 .site-header {
@@ -131,6 +133,7 @@ img {
   margin-top: 1em;
 }
 
+
 .third__main-content__header {
   font-family: "Oswald", sans-serif;
   color: #A59678;
@@ -148,6 +151,7 @@ img {
 
 .third__extra__item {
   background-color: #2e323f;
+  max-width: 350px;
   color: #fff;
   margin-top: 1em;
   padding: 2em 1em;
@@ -198,4 +202,137 @@ img {
 .footer__heading {
   font-family: "Oswald", sans-serif;
   margin-bottom: 1em;
+}
+
+/* MEDIUM SCREENS */
+@media (min-width: 700px) {
+  .third__extra {
+    display: flex;
+    gap: 1em;
+  }
+}
+
+/* LARGE SCREENS */
+@media (min-width: 1000px) {
+  .cta {
+    display: flex;
+    gap: 2em;
+  }
+  .main-nav-container {
+    background-color: #3B4050;
+  }
+  .main-nav {
+    display: flex;
+    max-height: 4rem;
+    max-width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2.5em;
+    margin: 0 auto;
+  }
+
+  .main-nav li {
+    display: inline;
+  }
+
+  .hamburger {
+    visibility: hidden;
+  }
+
+  .site-header {
+    padding-bottom: 5em;
+  }
+
+  .site-header__header-text{
+    font-size: 5.625rem;
+  }
+
+  .site-header__paragraph {
+    font-size: 1.5rem;
+  }
+
+  .cta__text {
+    align-self: flex-end;
+  }
+
+  .site-header__button {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  .second__content {
+    display: flex;
+    gap: 3em;
+  }
+
+  .second-item__header {
+    font-size: 1.875rem;
+  }
+
+  .second-item__text {
+    font-size: 1.125rem;
+  }
+
+  .third {
+    padding: 10em 0;
+  }
+
+  .third__main {
+    display: flex;
+    gap: 10em;
+  }
+
+  .third__main-content {
+    max-width: 600px;
+  }
+
+  .third__main-content__header {
+    font-size: 2.25rem;
+  }
+
+  .third__main-content__text {
+    font-size: 1.3125rem;
+  }
+
+  .third__extra {
+    flex-direction: column;
+  }
+
+  .third__extra__item {
+    padding: 2.5em;
+  }
+
+  .third__extra__item__header {
+    font-size: 1.875rem;
+  }
+
+  .third__extra__item__text {
+    font-size: 1.125rem;
+  }
+
+  .footer__heading {
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .site-footer__details, 
+  .site-footer__details__nav {
+    display: flex;
+    gap: 5em;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .site-footer__details__about {
+    max-width: 500px;
+  }
+
+  .site-footer__details__heading {
+    font-size: 1.3125rem;
+  }
+
+  .site-footer__site-nav-block__item {
+    font-size: 1rem;
+    margin-top: 1em;
+  }
 }

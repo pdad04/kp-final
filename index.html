@@ -12,26 +12,28 @@
 </head>
 <body>
   <header class="site-header">
-    <nav class="main-nav">
-      <div class="hamburger" onclick="onClick()">
-        <div class="hamburger-line"></div>
-        <div class="hamburger-line"></div>
-        <div class="hamburger-line"></div>
-      </div>
-      <img src="logo.svg" alt="" class="logo">
-      <ul>
-        <li class="main-nav__item"><a href="#">Home</a></li>
-        <li class="main-nav__item"><a href="#">About</a></li>
-        <li class="main-nav__item"><a href="#">Contact</a></li>
-        <li class="main-nav__item"><a href="#">Sign In</a></li>
-        <li class="main-nav__item__btn btn"><a href="#">Sign Up</a></li>
-      </ul>
-    </nav>
-    <div class="container">
+    <div class="main-nav-container">
+      <nav class="main-nav">
+        <div class="hamburger" onclick="onClick()">
+          <div class="hamburger-line"></div>
+          <div class="hamburger-line"></div>
+          <div class="hamburger-line"></div>
+        </div>
+        <img src="logo.svg" alt="" class="logo">
+        <ul>
+          <li class="main-nav__item"><a href="#">Home</a></li>
+          <li class="main-nav__item"><a href="#">About</a></li>
+          <li class="main-nav__item"><a href="#">Contact</a></li>
+          <li class="main-nav__item"><a href="#">Sign In</a></li>
+          <li class="main-nav__item__btn btn"><a href="#">Sign Up</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container cta">
       <div>
         <h1 class="site-header__header-text">Responsive layouts <span class=header-text--color>don't have to be a struggle</span></h1>
       </div>
-      <div>
+      <div class="cta__text">
         <p class="site-header__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti provident dolor cupiditate ab placeat perspiciatis consectetur cum.</p>
         <a href="#" class="btn site-header__button">I want to learn</a>
       </div>
@@ -39,7 +41,7 @@
   </header> 
 
   <section class="second">
-    <div class="container">
+    <div class="container second__content">
       <div class="second-item">
         <h2 class="second-item__header">Mobile-first</h2>
         <p class="second-item__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet aspernatur odit saepe possimus soluta sed, minus aliquid, eveniet pariatur aut accusantium voluptatum dolorum maxime.</p>
@@ -56,7 +58,7 @@
   </section>
 
   <section class="third">
-    <div class="container">
+    <div class="container third__main">
       <div class="third__main-content">
         <h2 class="third__main-content__header">It doesn't have to be so hard</h2>
         <p class="third__main-content__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem sequi facilis unde quaerat esse recusandae animi suscipit? Numquam, architecto animi! Impedit exercitationem autem voluptatum voluptas asperiores explicabo, accusantium illo praesentium architecto nostrum consequuntur ad consectetur! Quibusdam.</p>
@@ -91,28 +93,34 @@
         </div>
   
         <div class="site-footer__details__nav">
-          <h3 class="site-footer__details__heading">Getting around</h3>
-          <ul class="site-footer__details-nav-block">
-            <li class="site-footer__site-nav-block__item"><a href="#">Home</a></li>
-            <li class="site-footer__site-nav-block__item"><a href="#">About</a></li>
-            <li class="site-footer__site-nav-block__item"><a href="#">Contact</a></li>
-          </ul>
+          <div>
+            <h3 class="site-footer__details__heading">Getting around</h3>
+            <ul class="site-footer__details-nav-block">
+              <li class="site-footer__site-nav-block__item"><a href="#">Home</a></li>
+              <li class="site-footer__site-nav-block__item"><a href="#">About</a></li>
+              <li class="site-footer__site-nav-block__item"><a href="#">Contact</a></li>
+            </ul>
+          </div>
   
-          <h3 class="site-footer__details__heading">Other things</h3>
-          <ul class="site-footer__details-nav-block">
-            <li class="site-footer__site-nav-block__item"><a href="#">Lorem ipsum</a></li>
-            <li class="site-footer__site-nav-block__item"><a href="#">lorem</a></li>
-            <li class="site-footer__site-nav-block__item"><a href="#">Lorem ipsum</a></li>
-            <li class="site-footer__site-nav-block__item"><a href="#">lorem</a></li>
-          </ul>
+          <div>
+            <h3 class="site-footer__details__heading">Other things</h3>
+            <ul class="site-footer__details-nav-block">
+              <li class="site-footer__site-nav-block__item"><a href="#">Lorem ipsum</a></li>
+              <li class="site-footer__site-nav-block__item"><a href="#">lorem</a></li>
+              <li class="site-footer__site-nav-block__item"><a href="#">Lorem ipsum</a></li>
+              <li class="site-footer__site-nav-block__item"><a href="#">lorem</a></li>
+            </ul>
+          </div>
   
-          <h3 class="site-footer__details__heading">And more</h3>
-          <ul class="site-footer__details-nav-block">
-            <li class="site-footer__site-nav-block__item"><a href="#">Lorem ipsum</a></li>
-            <li class="site-footer__site-nav-block__item"><a href="#">lorem</a></li>
-            <li class="site-footer__site-nav-block__item"><a href="#">Lorem ipsum</a></li>
-            <li class="site-footer__site-nav-block__item"><a href="#">lorem</a></li>
-          </ul>
+          <div>
+            <h3 class="site-footer__details__heading">And more</h3>
+            <ul class="site-footer__details-nav-block">
+              <li class="site-footer__site-nav-block__item"><a href="#">Lorem ipsum</a></li>
+              <li class="site-footer__site-nav-block__item"><a href="#">lorem</a></li>
+              <li class="site-footer__site-nav-block__item"><a href="#">Lorem ipsum</a></li>
+              <li class="site-footer__site-nav-block__item"><a href="#">lorem</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
